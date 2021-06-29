@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBE3ED;
+    text-align: center;
+}
+.wrap {
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+button {
+    cursor: pointer;
+}
+
+header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #A87DA9;   
+    margin:10px 0;
+}
+.title {
+    display: inline-block;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 3px #FFFFFF, 4px 4px 4px #A87DA9;
+}
+.smallTitle {
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 1rem;
+    color:#fff;
+    margin:10px 0;
+}
+
+form {
+    padding:20px;
+}
+.inputText {
+    width:80%;
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    margin:0 10px;
+    box-shadow: 0px 0px 3px #fff, 3px 3px 3px #A87DA9;
+}
+.btn {
+    background-color: #C7A4C6;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    border:none;
+}
+.inputBtn {
+    padding:8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #fff, 3px 3px 3px #C7A4C6;
+}
+section {
+    font-family: 'Cafe24Oneprettynight';
+    background-color: #fff;
+    border-radius: 5px;
+    height: 400px;
+    padding:20px;
+    box-shadow: 1px 2px 2px 3px #fff, 2px 4px 4px 4px #A87DA9;
+}
+li {
+    display:flex;
+}
+.checkBox {
+    display: inline-block;
+    border:1px solid #ccc;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    margin-top:5px;
+    transition: background-color 2s;
+}
+.checkBox:hover {
+    background-color:#C7A4C6;
+}
+.text {
+    width:100%;
+    margin-left:10px;
+    display: flex;
+    justify-content: space-between;  
+}
+.listText {
+    font-size:1.3rem;
+}
+.fa-trash {
+    color:#ccc;
+    cursor: pointer;
+    transition: color 2s;
+    margin-top:5px;
+}
+.fa-trash:hover {
+    color:#C7A4C6;
+}
+
+
+.allCheckBtn, .allResetBtn {
+    margin:20px;
+    border:none;
+    padding:10px 15px;
+}

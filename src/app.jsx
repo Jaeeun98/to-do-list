@@ -8,11 +8,15 @@ import NavBar from './component/navBar';
 class App extends Component {
   render() {
     return (
-      <>
+      <div className="wrap">
         <NavBar />
         <AddForm />
-        <List />
-      </>
+        <section>  
+          <List />
+        </section>
+        <button className="allCheckBtn btn">All Reset</button>
+        <button className="allResetBtn btn">All Reset</button>
+      </div>
     );
   }
 }

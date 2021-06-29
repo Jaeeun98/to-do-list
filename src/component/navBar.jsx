@@ -5,7 +5,7 @@ class NavBar extends Component {
         return (
             <header>
                 <span className="title">ToDoList</span>
-                <span className="resultList">0</span>
+                <div className="smallTitle">지금까지 완료한 할 일 목록 : <span className="resultList">0</span></div>
             </header>
         );
     }
