@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 
 class List extends Component {
-
     checkedRef = React.createRef();
 
     handleChecked = (e) => {
