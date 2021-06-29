@@ -17,14 +17,17 @@ class App extends Component {
 
   handleListAdd = e => {
     const list = e.target[0].value;
-    const check = [ ...this.state.check, { id : Date.now(), checkList : list } ]
-
-    this.setState({check});
-    e.target[0].value = '';
-    e.preventDefault();
+    if(list == ''){
+      e.preventDefault();
+      return;
+    } else {
+      const check = [ ...this.state.check, { id : Date.now(), checkList : list } ]
+    
+      this.setState({check});
+      e.target[0].value = '';
+      e.preventDefault();
+    } 
   }
-
-  
 
   render() {
     return (
