@@ -11,7 +11,6 @@ class List extends Component {
         checkedList.style.textDecoration = 'line-through';
         checkedList.style.opacity = '0.5';
         e.target.style.backgroundColor = '#C7A4C6';
-
     }
 
     render() {

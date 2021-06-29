@@ -13,7 +13,6 @@ class App extends Component {
         { id : 2, checkList : '30분동안 운동하기'},
         { id : 3, checkList : '이력서 작성하기'}
     ],
-    count : 0,
   }
 
   handleListAdd = e => {

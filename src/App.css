@@ -83,7 +83,7 @@ li {
     height:15px;
     border-radius: 50%;
     margin-top:2px;
-    transition: background-color 2s;
+    transition: background-color 1s;
 }
 .checkBox:hover {
     background-color:#C7A4C6;
@@ -100,7 +100,7 @@ li {
 .fa-trash {
     color:#ccc;
     cursor: pointer;
-    transition: color 2s;
+    transition: color 1s;
     margin-top:5px;
     width:100%;
 }
