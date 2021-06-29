@@ -102,11 +102,15 @@ li {
     cursor: pointer;
     transition: color 2s;
     margin-top:5px;
+    width:100%;
 }
 .fa-trash:hover {
     color:#C7A4C6;
 }
-
+.trashBtn {
+    border:none;
+    background: none;
+}
 
 .allCheckBtn, .allResetBtn {
     margin:20px;

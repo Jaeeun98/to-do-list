@@ -29,6 +29,10 @@ class App extends Component {
     } 
   }
 
+  handleRemoveList = (e) => {
+    console.log(e);
+  }
+
   render() {
     return (
       <div className="wrap">
@@ -39,6 +43,7 @@ class App extends Component {
         <section>  
           <List 
             check={this.state.check} 
+            handleRemoveList={this.handleRemoveList}
           />
         </section>
         <button className="allCheckBtn btn">All Reset</button>
