@@ -74,6 +74,7 @@ section {
 }
 li {
     display:flex;
+    margin-bottom:20px;
 }
 .checkBox {
     display: inline-block;
@@ -81,7 +82,7 @@ li {
     width:15px;
     height:15px;
     border-radius: 50%;
-    margin-top:5px;
+    margin-top:2px;
     transition: background-color 2s;
 }
 .checkBox:hover {
@@ -94,7 +95,7 @@ li {
     justify-content: space-between;  
 }
 .listText {
-    font-size:1.3rem;
+    font-size:1.1rem;
 }
 .fa-trash {
     color:#ccc;

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 class AddForm extends Component {
+
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.props.handleListAdd}>
                 <input type="text" className="inputText" />
-                <input type="button" value="Add" className="inputBtn btn"/>
+                <input type="submit" value="Add" className="inputBtn btn"/>
             </form>
         );
     }
