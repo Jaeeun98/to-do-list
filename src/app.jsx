@@ -37,6 +37,12 @@ class App extends Component {
     this.setState({check});
   }
 
+  handleReset = () => {
+    const check = [];
+
+    this.setState({check});
+  }
+
   render() {
     return (
       <div className="wrap">
@@ -50,8 +56,7 @@ class App extends Component {
             handleRemoveList={this.handleRemoveList}
           />
         </section>
-        <button className="allCheckBtn btn">All Check</button>
-        <button className="allResetBtn btn">All Reset</button>
+        <button className="allResetBtn btn" onClick={this.handleReset}>All Reset</button>
       </div>
     );
   }
