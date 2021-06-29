@@ -11,9 +11,8 @@ class List extends Component {
         checkedList.style.textDecoration = 'line-through';
         checkedList.style.opacity = '0.5';
         e.target.style.backgroundColor = '#C7A4C6';
-    }
 
-    
+    }
 
     render() {
         return (
@@ -24,7 +23,7 @@ class List extends Component {
                         <div className="text">
                             <span className="listText" ref={this.checkedRef}>{list.checkList}</span>
                             <button onClick={this.props.handleRemoveList} className="trashBtn">
-                                <i className="fas fa-trash" ></i>
+                                <i className="fas fa-trash"></i>
                             </button>
                         </div>
                     </li>

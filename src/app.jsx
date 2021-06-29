@@ -12,7 +12,8 @@ class App extends Component {
         { id : 1, checkList : 'react 공부하기' },
         { id : 2, checkList : '30분동안 운동하기'},
         { id : 3, checkList : '이력서 작성하기'}
-    ]
+    ],
+    count : 0,
   }
 
   handleListAdd = e => {
@@ -30,13 +31,16 @@ class App extends Component {
   }
 
   handleRemoveList = (e) => {
-    console.log(e);
+    const removeList = e.target.parentNode.parentNode.parentNode.innerText;
+    const check = this.state.check.filter(list => list.checkList !== removeList)
+
+    this.setState({check});
   }
 
   render() {
     return (
       <div className="wrap">
-        <NavBar />
+        <NavBar count={this.state.count} />
         <AddForm 
           handleListAdd={this.handleListAdd}
         />
@@ -46,7 +50,7 @@ class App extends Component {
             handleRemoveList={this.handleRemoveList}
           />
         </section>
-        <button className="allCheckBtn btn">All Reset</button>
+        <button className="allCheckBtn btn">All Check</button>
         <button className="allResetBtn btn">All Reset</button>
       </div>
     );
